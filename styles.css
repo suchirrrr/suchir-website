@@ -1,0 +1,156 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #111;
+    color: #39FF14; /* Neon Green */
+    text-align: center;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden; /* Prevent scrollbars due to large images */
+}
+
+/* Background images for cyberpunk effect on sides */
+/* Background images for cyberpunk effect on sides */
+body::before, body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15vw;
+    background-image: url('images/cyberpunk-side.jpg'); /* Replace with your own image path */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+
+
+body::before {
+    left: 0;
+}
+
+body::after {
+    right: 0;
+}
+
+/* Header Styles */
+.site-title {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #39FF14;
+    margin: 20px 0;
+}
+
+.sub-heading {
+    font-size: 22px;
+    color: #C1FF81;
+    margin-bottom: 50px;
+}
+
+/* About Me Section */
+.about-me {
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    color: #39FF14;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #39FF14; /* Neon green border */
+}
+
+/* Technologies & Achievements Sections */
+.skills, .achievements {
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    color: #39FF14;
+}
+
+.hidden {
+    display: none;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Contact Section */
+.contact {
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    color: #39FF14;
+}
+
+button {
+    font-size: 20px;
+    padding: 15px 30px;
+    background-color: #39FF14;
+    color: #111;
+    border: 2px solid #00FF00;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #00FF00;
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #111;
+    padding: 15px;
+    font-size: 16px;
+    color: #39FF14;
+}
+
+footer p {
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .site-title {
+        font-size: 36px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .skills, .achievements, .contact {
+        padding: 15px;
+        margin: 20px;
+    }
+}

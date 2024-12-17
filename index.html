@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suchir Ganesh's Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Google Fonts for Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Include Fireworks.js -->
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js/dist/fireworks.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="site-title">Suchir Ganesh</h1>
+        <p class="sub-heading">Welcome to my personal website</p>
+    </header>
+
+    <section class="about-me">
+        <h2>About Me</h2>
+        <img src="images/ME.png" alt="Suchir Ganesh's Profile Picture" class="profile-img">
+        <p>Hi, I'm <b>Suchir Ganesh</b>. I'm passionate about technology and programming. I love working with Python, Pandas, NumPy, and have a deep understanding of Data Structures, Object-Oriented Programming (OOP), and much more!</p>
+    </section>
+
+    <section class="skills">
+        <h2>Technologies I Work With</h2>
+        <button id="techBtn" onclick="toggleSection('tech')">Show Technologies</button>
+        <div id="tech" class="hidden">
+            <ul>
+                <li>Python</li>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>Data Structures</li>
+                <li>Object-Oriented Programming (OOP)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="achievements">
+        <h2>My Achievements</h2>
+        <button id="achievBtn" onclick="toggleSection('achiev')">Show Achievements</button>
+        <div id="achiev" class="hidden">
+            <ul>
+                <li>Played Under 19 Round Robin in Cricket</li>
+                <li>Played Under 16 Cricket</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, click the button below to visit my LinkedIn profile!</p>
+        <!-- Fireworks button -->
+        <button id="contactBtn" onclick="triggerFireworksAndRedirect()">Visit LinkedIn</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Suchir Ganesh. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
